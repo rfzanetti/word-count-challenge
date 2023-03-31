@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WordCounter</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body onload="javascript:page.init()">
+    <form>
+        <input type="text" id="words" name="words" placeholder="Write your words here"><br><br>
+        <button id="submit-button" type="submit">Count!</button>
+    </form>
+
+    <div id="result"></div>
+
+</body>
+
+<script src="{% static 'js/index.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>
